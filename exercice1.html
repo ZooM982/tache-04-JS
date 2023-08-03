@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tache 04 EX0 1</title>
+</head>
+<body>
+    <style>
+        #search {
+            border-radius: 10px;
+            border: 2px solid black;
+            height: 50px;
+            width: 75%;
+        }
+    </style>
+    <h1>Les boucles</h1>
+    <p style="font-weight: bold; text-decoration: underline;>Exercice 1 :">Exercice 1:</p>
+    <p>
+        Écrire un programme qui permet à un utilisateur de voir quelques types de boucles, 
+        avec un champ où écrire un type de boucle et de voir la définition et l’utilisation de cette boucle</p>
+    <input type="search" id="search" value="" onchange="ouvrirPage()" placeholder="entrer le nom d’une boucle exemple: for, do while, while.......">
+
+    <h1>Pour rappel, nous pouvons utiliser les boucles suivantes en JavaScript :</h1>
+        <p>La boucle while ;</p>
+        <p>La boucle do… while ;</p>
+        <p> La boucle for ;</p>
+        <p>La boucle for… in ;</p>
+        <p>La boucle for… of ;</p>
+        <p>La boucle for await… of.</p>
+    <script>
+        function ouvrirPage() {
+            var a = document.getElementById("search").value;
+
+            if (a === "do while") {
+                document.write("<h1>La boucle JavaScript do… while</h1><br><p>La boucle do… while (« faire… tant que ») est relativement semblable à la boucle while dans sa syntaxe.La grande différence entre les boucles while et do… while va résider dans l’ordre dans lequel vont se faire les opérations.En effet, lorsqu’on utilise une boucle do… while, le code de la boucle va être exécuté avant l’évaluation de la condition de sortie.Cela signifie qu’à la différence de la boucle while, on effectuera toujours un passage dans une boucle do… while même si la condition de sortie n’est jamais vérifiée et donc le code de la boucle sera toujours exécuté au moins une fois.Prenons un exemple pour illustrer la différence de structure et de fonctionnement entre les boucles while et do… while.</p>");
+            }
+
+            if (a === "while") {
+                 document.write("<h1>La boucle JavaScript while</h1><p>La boucle while (« tant que » en français) va nous permettre de répéter une série d’instructions tant qu’une condition donnée est vraie c’est-à-dire tant que la condition de sortie n’est pas vérifiée.L’une des boucles while les plus simples qu’on puisse créer pour illustrer le fonctionnement de cette première boucle va être une boucle while qui va itérer sur une valeur numérique d’une variable.</p>");
+            }
+
+            if (a === "for") {
+                 document.write("<h1>La boucle JavaScript for</h1><p>La boucle for (« pour » en français) est structurellement différente des boucles while et do… while puisqu’on va cette fois-ci initialiser notre variable à l’intérieur de la boucle.La boucle for utilise une syntaxe relativement condensée et est relativement puissante ce qui en fait la condition la plus utilisée en JavaScript.</p>");
+            }
+
+
+        }
+    </script>
+
+</body>
+</html>
