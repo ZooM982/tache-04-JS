@@ -11,7 +11,15 @@
             border-radius: 10px;
             border: 2px solid black;
             height: 50px;
-            width: 75%;
+            width: 70%;
+        }
+        #button {
+            background-color: aqua;
+            border: 0px solid black;
+            height: 50px;
+            width: 50%;
+            border-radius: 30px;
+            cursor: pointer;
         }
     </style>
     <h1>Les boucles</h1>
@@ -20,6 +28,9 @@
         Écrire un programme qui permet à un utilisateur de voir quelques types de boucles, 
         avec un champ où écrire un type de boucle et de voir la définition et l’utilisation de cette boucle</p>
     <input type="search" id="search" value="" onchange="ouvrirPage()" placeholder="entrer le nom d’une boucle exemple: for, do while, while.......">
+    <br>
+    <br>
+    <input type="button" id="button" onclick="ouvrirPage()" value="Chercher">
 
     <h1>Pour rappel, nous pouvons utiliser les boucles suivantes en JavaScript :</h1>
         <p>La boucle while ;</p>

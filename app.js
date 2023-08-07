@@ -1,9 +1,3 @@
-//BARRE DE RECHERCHE
-
-
-
-
-
 // BOUCLE FOR
 document.write("<table border='1px'>");
 
